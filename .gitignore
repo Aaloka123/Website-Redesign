@@ -28,3 +28,18 @@ Thumbs.db
 
 # Local overrides
 *.local
+
+# Secrets & credentials
+*.pem
+*.key
+*.p12
+secrets.json
+credentials.json
+.npmrc
+
+# Test & tooling
+coverage/
+.cursor/
+
+# OS
+Thumbs.db
