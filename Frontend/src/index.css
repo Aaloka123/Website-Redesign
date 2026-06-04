@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: Montserrat, system-ui, sans-serif;
+  --color-brand-orange: #f05a42;
+  --color-brand-navy: #3b5275;
+  --color-brand-body: #5c6578;
+  --color-brand-body-alt: #4a5568;
+  --color-brand-muted: #9aa3b2;
+  --color-btn-cta: #f26549;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-brand-body);
+}
+
+@layer components {
+  .section-eyebrow {
+    @apply text-sm font-semibold tracking-wide text-brand-orange uppercase;
+  }
+
+  .section-title {
+    @apply mt-3 font-serif text-3xl font-bold leading-tight text-brand-navy sm:text-4xl;
+  }
+
+  .section-header-center .section-eyebrow,
+  .section-header-center .section-title {
+    @apply text-center;
+  }
+
+  .body-text {
+    @apply text-[15px] leading-relaxed text-brand-body;
+  }
+
+  .card-title {
+    @apply font-serif text-xl font-bold text-brand-navy;
+  }
+
+  .card-title-lg {
+    @apply font-serif text-2xl font-bold leading-snug text-brand-navy;
+  }
+
+  .btn-cta {
+    @apply cursor-pointer rounded-full bg-btn-cta px-8 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#e05a3f];
+  }
+
+  .btn-cta-orange {
+    @apply cursor-pointer rounded-full bg-brand-orange px-7 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#d94e38];
+  }
+}
